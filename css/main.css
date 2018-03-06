@@ -1,0 +1,187 @@
+
+
+ 
+
+
+
+/* NAVBAR */
+
+.navbar-custom {
+	
+	font-size:14px;
+	font-weight: bold;
+	letter-spacing:1px;
+	background:transparent;
+	margin-bottom:0;
+	border-radius:0;
+	z-index:1041;
+	width:100%;
+	-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+.navbar-custom a {
+	color:inherit;
+
+}
+
+.navbar-custom .navbar-nav > li > a:hover {
+	opacity: 0.8;
+	background:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:active,
+.navbar-custom .navbar-nav > li > a:focus {
+	color:cyan;
+	background:transparent;
+}
+
+.navbar-custom .icon-bar {
+	background:#fff;
+}
+
+.sticky-wrapper {
+	position:absolute;
+	width:100%;
+	padding-top:25px;
+}
+
+.sticky-wrapper a {
+	 color: #5d7a85;
+}
+
+.is-sticky .navbar-custom {
+	width:100%;
+	background:#5d7a85;
+	-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  	-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+	transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+.is-sticky a {
+	 color: #fff;
+}
+
+
+/* navbar effect */
+
+.navbar-custom a {
+	padding: 8px 0;
+}
+
+.navbar-custom .navbar-nav > li > a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: rgb(50, 180, 193);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.navbar-custom .navbar-nav > li > a:hover::after,
+.navbar-custom .navbar-nav > li > a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.navbar-collapse{
+	padding-top: 10px !important;
+}
+
+/* GALLERY IMG OVERLAY EFFCET */
+
+.wrap {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+.wrap .overlay:after {
+	background: none repeat scroll 0 0 rgba(250, 196, 43, 0.7);
+	height: 100%;
+	content:"";
+	display: block;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: -100%;
+	-webkit-transition: all 0.6s ease 0s;
+	-moz-transition: all 0.6s ease 0s;
+	-ms-transition: all 0.6s ease 0s;
+	-o-transition: all 0.6s ease 0s;
+	transition: all 0.6s ease 0s;
+	width: 100%;
+}
+	
+.wrap:hover .overlay:after {
+	top: 50%;
+	opacity: 1;
+}
+
+.wrap .overlay:before {
+	background: none repeat scroll 0 0 rgba(250, 196, 43, 0.7);
+	bottom: -100%; 
+	height: 100%;
+	content:"";
+	display: block;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	-webkit-transition: all 0.6s ease 0s;
+	-moz-transition: all 0.6s ease 0s;
+	-ms-transition: all 0.6s ease 0s;
+	-o-transition: all 0.6s ease 0s;
+	transition: all 0.6s ease 0s;
+	width: 100%;
+}
+
+.wrap:hover .overlay:before {
+	bottom: 50%;
+	opacity: 1;
+}
+
+.wrap .icon {
+	color:#ffffff;
+	visibility: hidden;
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 50%;
+	margin-top: -20px;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+	
+.wrap:hover .icon {
+	opacity: 1;
+	visibility: visible;
+}
+
+.wrap .icon a {
+	color:#ffffff;
+}
+
+.wrap .icon a:hover {
+	color:#333333;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
